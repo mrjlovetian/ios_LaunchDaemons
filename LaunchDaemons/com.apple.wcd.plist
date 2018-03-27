@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnablePressuredExit</key>
+	<true/>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>Label</key>
+	<string>com.apple.wcd</string>
+	<key>POSIXSpawnType</key>
+	<string>Adaptive</string>
+	<key>Program</key>
+	<string>/usr/libexec/wcd</string>
+	<key>UserName</key>
+	<string>mobile</string>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>TransactionTimeLimitEnabled</key>
+	<false/>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.wcd</key>
+		<true/>
+		<key>com.apple.wcd.private</key>
+		<true/>
+		<key>com.apple.private.alloy.watchconnectivity-idswake</key>
+		<true/>
+		<key>com.apple.private.alloy.watchconnectivity.classd-idswake</key>
+		<true/>
+		<key>com.apple.watchconnectivity.complication</key>
+		<true/>
+		<key>com.apple.watchconnectivity.complication.push</key>
+		<true/>
+		<key>com.apple.watchconnectivity.complication.push.development</key>
+		<true/>
+		<key>com.apple.pairedsync.watchconnectivity.complications</key>
+		<true/>
+	</dict>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.notifyd.matching</key>
+		<dict>
+			<key>com.apple.sockpuppet.applications.updated</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.sockpuppet.applications.updated</string>
+			</dict>
+			<key>com.apple.mobile.keybagd.first_unlock</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.mobile.keybagd.first_unlock</string>
+			</dict>
+			<key>com.apple.nanoregistry.devicedidpair</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.nanoregistry.devicedidpair</string>
+			</dict>
+			<key>com.apple.nanoregistry.watchdidbecomeactive</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.nanoregistry.watchdidbecomeactive</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

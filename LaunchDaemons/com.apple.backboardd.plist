@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>KeepAlive</key>
+	<true/>
+	<key>HighPriorityIO</key>
+	<true/>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/libexec/backboardd</string>
+	</array>
+	<key>UserName</key>
+	<string>mobile</string>
+	<key>Label</key>
+	<string>com.apple.backboardd</string>
+	<key>POSIXSpawnType</key>
+	<string>Interactive</string>
+	<key>MachServices</key>
+	<dict>
+        <key>com.apple.backboard.hid.focus</key>
+        <true/>
+
+		<key>com.apple.backboard.watchdog</key>
+		<true/>
+		<key>com.apple.CARenderServer</key>
+		<dict>
+			<key>ResetAtClose</key>
+			<true/>
+		</dict>
+		<key>com.apple.iohideventsystem</key>
+		<dict>
+			<key>ResetAtClose</key>
+			<true/>
+		</dict>
+		<key>com.apple.backboard.display.services</key>
+		<dict>
+			<key>ResetAtClose</key>
+			<true/>
+		</dict>
+		<key>com.apple.backboard.hid.services</key>
+		<dict>
+			<key>ResetAtClose</key>
+			<true/>
+		</dict>
+		<key>com.apple.backboard.checkin</key>
+		<true/>
+		<key>PurpleWorkspacePort</key>
+		<dict>
+			<key>ResetAtClose</key>
+			<true/>
+		</dict>
+		<key>PurpleSystemEventPort</key>
+		<dict>
+			<key>ResetAtClose</key>
+			<true/>
+		</dict>
+		<key>com.apple.backlightd</key>
+		<true/>
+		<key>com.apple.backboard.altsysapp</key>
+		<true/>
+		<key>com.apple.uikit.GestureServer</key>
+		<true/>
+		<key>com.apple.backboard.system-app-server</key>
+		<true/>
+		<key>com.apple.backboard.TouchDeliveryPolicyServer</key>
+		<true/>
+		<key>com.apple.backboard.animation-fence-arbiter</key>
+		<dict>
+			<key>ResetAtClose</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

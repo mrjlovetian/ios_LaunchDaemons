@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>POSIXSpawnType</key>
+	<string>Adaptive</string>
+	<key>EnablePressuredExit</key>
+	<true/>
+	<key>Label</key>
+	<string>com.apple.awdd</string>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.notifyd.matching</key>
+		<dict>
+			<key>com.apple.awdd.ResetPrivacyWarningsNotification</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.Preferences.ResetPrivacyWarningsNotification</string>
+			</dict>
+			<key>com.apple.awdd.SubmissionPreferenceChanged</key>
+			<dict>
+				<key>Notification</key>
+				<string>logging tasks have changed</string>
+			</dict>
+			<key>com.apple.awdd.UISubmissionPreferenceChanged</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.OTACrashCopier.SubmissionPreferenceChanged</string>
+			</dict>
+			<key>com.apple.awdd.ProfileChanged</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.ManagedConfiguration.profileListChanged</string>
+			</dict>
+			<key>com.apple.awdd.AnonymityChangedCommandLine</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.awdd.anonymity</string>
+			</dict>
+			<key>com.apple.awdd.locationdawd</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.locationd.authorization</string>
+			</dict>
+			<key>com.apple.awdd.locationdprefs</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.locationd/Prefs</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.awdd</key>
+		<true/>
+	</dict>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/System/Library/PrivateFrameworks/WirelessDiagnostics.framework/Support/awdd</string>
+	</array>
+	<key>ServiceIPC</key>
+	<false/>
+	<key>UserName</key>
+	<string>_wireless</string>
+</dict>
+</plist>

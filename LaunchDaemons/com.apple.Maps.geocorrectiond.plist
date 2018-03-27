@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.apple.Maps.geocorrectiond</string>
+	<key>Program</key>
+	<string>/System/Library/PrivateFrameworks/MapsSupport.framework/geocorrectiond</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/System/Library/PrivateFrameworks/MapsSupport.framework/geocorrectiond</string>
+	</array>
+	<key>RunAtLoad</key>
+	<false/>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>UserName</key>
+	<string>mobile</string>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.xpc.activity</key>
+		<dict>
+			<key>com.apple.Maps.geocorrectiond.launch</key>
+			<dict>
+				<key>Repeating</key>
+				<true/>
+				<key>Interval</key>
+				<real>43200</real>
+				<key>GracePeriod</key>
+				<integer>10800</integer>
+				<key>Priority</key>
+				<string>Maintenance</string>
+			</dict>
+		</dict>
+		<key>com.apple.notifyd.matching</key>
+		<dict>
+			<key>com.apple.Preferences.ResetPrivacyWarningsNotification</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.Preferences.ResetPrivacyWarningsNotification</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

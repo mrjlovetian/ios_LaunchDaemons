@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>EnablePressuredExit</key>
+    <true/>
+	<key>ProcessType</key>
+	<string>Standard</string>
+	<key>Program</key>
+	<string>/System/Library/CoreServices/ScreenSharingServer.app/ScreenSharingServer</string>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.notifyd.matching</key>
+		<dict>
+			<key>com.apple.screensharing.idslaunchnotification</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.screensharing.idslaunchnotification</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>Label</key>
+	<string>com.apple.screensharingserver</string>
+    <key>MachServices</key>
+    <dict>
+        <key>com.apple.ScreenSharingViewServiceHelper</key>
+        <true/>
+    </dict>
+	<key>POSIXSpawnType</key>
+	<string>Adaptive</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>System/Library/CoreServices/ScreenSharingServer.app/ScreenSharingServer</string>
+		<string>-i</string>
+		<string>-a</string>
+		<string>-d</string>
+		<string>16</string>
+	</array>
+	<key>UserName</key>
+	<string>mobile</string>
+</dict>
+</plist>

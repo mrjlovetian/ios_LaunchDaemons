@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.notifyd.matching</key>
+		<dict>
+			<key>com.apple.GeoServices.countryCodeChanged</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.GeoServices.countryCodeChanged</string>
+			</dict>
+			<key>com.apple.Preferences.ResetPrivacyWarningsNotification</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.Preferences.ResetPrivacyWarningsNotification</string>
+			</dict>
+		</dict>
+		<key>com.apple.xpc.activity</key>
+		<dict>
+			<key>com.apple.Maps.mapspushd.launchForAnnouncements</key>
+			<dict>
+				<key>Repeating</key>
+				<true/>
+				<key>Interval</key>
+				<integer>21600</integer>
+				<key>Priority</key>
+				<string>Maintenance</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>Label</key>
+	<string>com.apple.Maps.mapspushd</string>
+	<key>Program</key>
+	<string>/System/Library/PrivateFrameworks/MapsSupport.framework/mapspushd</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/System/Library/PrivateFrameworks/MapsSupport.framework/mapspushd</string>
+	</array>
+	<key>RunAtLoad</key>
+	<false/>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.Maps.mapspushd</key>
+		<true/>
+		<key>com.apple.Maps.mapspushd.icloud</key>
+		<true/>
+		<key>com.apple.Maps.mapspushd.bulletinboard</key>
+		<true/>
+		<key>com.apple.private.alloy.maps-idswake</key>
+		<true/>
+	</dict>
+	<key>UserName</key>
+	<string>mobile</string>
+	<key>EnablePressuredExit</key>
+	<true/>
+</dict>
+</plist>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.apple.VideoSubscriberAccount.Bulletind</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.VideoSubscriberAccount.BulletinService</key>
+		<true/>
+	</dict>
+	<key>POSIXSpawnType</key>
+	<string>Adaptive</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/System/Library/Frameworks/VideoSubscriberAccount.framework/Support/VideoSubscriberAccountBulletind</string>
+	</array>
+	<key>EnablePressuredExit</key>
+	<true/>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>UserName</key>
+	<string>mobile</string>
+</dict>
+</plist>

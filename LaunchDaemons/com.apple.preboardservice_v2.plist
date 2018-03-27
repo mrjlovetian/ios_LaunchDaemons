@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DEFAULT-OPTIONS</key>
+	<dict>
+		<key>Level</key>
+		<dict>
+			<key>Persist</key>
+			<string>Info</string>
+			<key>Enable</key>
+			<string>Info</string>
+		</dict>
+		<key>TTL</key>
+		<dict>
+			<key>Info</key>
+			<integer>2</integer>
+			<key>Default</key>
+			<integer>2</integer>
+			<key>Debug</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>Info</key>
+	<dict>
+		<key>Enable-Oversize-Messages</key>
+		<true/>
+	</dict>
+	<key>Debug</key>
+	<dict>
+		<key>Enable-Oversize-Messages</key>
+		<true/>
+	</dict>
+	<key>EnablePressuredExit</key>
+	<false/>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>Label</key>
+	<string>com.apple.preboardservice_v2</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.preboardservice_v2</key>
+		<true/>
+	</dict>
+	<key>POSIXSpawnType</key>
+	<string>Adaptive</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/libexec/PreboardService</string>
+		<string>-v</string>
+		<string>2</string>
+	</array>
+	<key>UserName</key>
+	<string>mobile</string>
+</dict>
+</plist>

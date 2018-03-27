@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>KeepAlive</key>
+	<dict>
+		<key>PathState</key>
+		<dict>
+			<key>/var/mobile/Library/Caches/GeoServices/Navd/working</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>Label</key>
+	<string>com.apple.navd</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.navigationService</key>
+		<true/>
+		<key>com.apple.navd</key>
+		<true/>
+		<key>com.apple.navigationListener</key>
+		<true/>
+		<key>com.apple.navigationServer</key>
+		<true/>
+		<key>com.apple.navd.recentLocationsService</key>
+		<true/>
+	</dict>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/System/Library/PrivateFrameworks/MapsSupport.framework/navd</string>
+	</array>
+	<key>UserName</key>
+	<string>mobile</string>
+	<key>POSIXSpawnType</key>
+	<string>Adaptive</string>
+	<key>EnablePressuredExit</key>
+	<true/>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.notifyd.matching</key>
+		<dict>
+			<key>com.apple.purplebuddy.setupdone</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.purplebuddy.setupdone</string>
+			</dict>
+			<key>com.apple.mobile.keybagd.first_unlock</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.mobile.keybagd.first_unlock</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

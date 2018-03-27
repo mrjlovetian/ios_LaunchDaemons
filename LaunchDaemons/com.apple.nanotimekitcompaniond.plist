@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>Label</key>
+	<string>com.apple.nanotimekitcompaniond</string>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.notifyd.matching</key>
+		<dict>
+			<key>LanguageChange</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.language.changed</string>
+			</dict>
+			<key>LocaleChange</key>
+			<dict>
+				<key>Notification</key>
+				<string>AppleDatePreferencesChangedNotification</string>
+			</dict>
+			<key>PhotoLibraryChange</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.assetsd.changehub</string>
+			</dict>
+			<key>Synced Album changed</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.nanophotos.prefs.syncedalbum</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.private.alloy.clockface.sync-idswake</key>
+		<true/>
+		<key>com.apple.nanotimekit.collectionserver</key>
+		<true/>
+		<key>com.apple.nanotimekit.complicationstoreserver</key>
+		<true/>
+		<key>com.apple.clockface.pairedsync</key>
+		<true/>
+		<key>com.apple.nanotimekit.facesnapshotserver</key>
+		<true/>
+	</dict>
+	<key>POSIXSpawnType</key>
+	<string>Adaptive</string>
+	<key>Program</key>
+	<string>/System/Library/PrivateFrameworks/NanoTimeKitCompanion.framework/nanotimekitcompaniond</string>
+	<key>UserName</key>
+	<string>mobile</string>
+</dict>
+</plist>

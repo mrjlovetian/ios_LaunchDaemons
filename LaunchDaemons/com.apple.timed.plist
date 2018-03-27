@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.systemconfiguration</key>
+		<dict>
+			<key>airplane mode changed</key>
+			<dict>
+				<key>Identifier</key>
+				<string>com.apple.radios.plist</string>
+				<key>KeyPath</key>
+				<string>AirplaneMode</string>
+				<key>Value</key>
+				<false/>
+			</dict>
+		</dict>
+	</dict>
+	<key>JetsamProperties</key>
+	<dict>
+		<key>JetsamMemoryLimit</key>
+		<integer>2500</integer>
+		<key>JetsamPriority</key>
+		<integer>-49</integer>
+	</dict>
+	<key>Label</key>
+	<string>com.apple.timed</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.timed.xpc</key>
+		<true/>
+	</dict>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/libexec/timed</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StartInterval</key>
+	<integer>3600</integer>
+	<key>KeepAlive</key>
+	<dict>
+		<key>PathState</key>
+		<dict>
+			<key>/var/mobile/Library/Caches/com.apple.timed.launchd</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ThrottleInterval</key>
+	<integer>3</integer>
+	<key>UserName</key>
+	<string>mobile</string>
+	<key>GroupName</key>
+	<string>mobile</string>
+	<key>POSIXSpawnType</key>
+	<string>Interactive</string>
+</dict>
+</plist>
