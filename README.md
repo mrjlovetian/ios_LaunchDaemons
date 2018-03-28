@@ -14,7 +14,7 @@
     
 
 # 文件含义
-<font color=green>* 删除后没有影响的开机启动项:
+* <font color=green>删除后没有影响的开机启动项:
 > com.apple.aslmanager.plist........................管理系统日志的进程
 > com.apple.chud.chum.plist.........................关于CHUD(硬件开发)的进程
 > com.apple.chud.pilotfish.plist......................关于CHUD(硬件开发)的进程
@@ -28,7 +28,7 @@
 > com.apple.iqagent.plist...............................未知作用的进程,删除无影响
 > com.apple.stackshot.server.plist.................未知作用的进程,删除无影响com.apple.tcpdump.server.plist..................可能是用来转存网络数据的,具体功能未知,删除无影响</font>
 
-<font color=orange>* 删除后禁用部分功能的启动项:
+* <font color=orange>删除后禁用部分功能的启动项:
 > com.apple.searchd.plist...............................启用Sportlight(桌面最左面那个搜索器)搜索功能的进程
 > com.apple.accessoryd.plist..........................启用配件支持的进程(使用底座、音响的用户删完后会杯具)
 > com.apple.apsd.plist....................................启用Push邮件通知功能(在天朝比较很少用)
@@ -43,7 +43,7 @@
 > com.apple.scrod.plist...................................启用语音控制的进程
 > com.apple.itunesstored.plist........................这个进程不能完全禁用,否则你就不能使用AppStore来安装程序据说</font>
 
-<font color=red>* 绝不能删除的关键开机启动项:
+* <font color=red>绝不能删除的关键开机启动项:
 > com.apple.fairplayd.plist..............................启动数字权限管理的进程(删了就完了)
 > com.apple.installd.plist.................................启动容许安装软件的进程
 > com.apple.BTServer.plist.............................未知进程(删了后,速度会变成[超慢])
