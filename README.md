@@ -14,7 +14,7 @@
     
 
 # 文件含义
-* 删除后没有影响的开机启动项:
+<font color=green>* 删除后没有影响的开机启动项:
 > com.apple.aslmanager.plist........................管理系统日志的进程
 > com.apple.chud.chum.plist.........................关于CHUD(硬件开发)的进程
 > com.apple.chud.pilotfish.plist......................关于CHUD(硬件开发)的进程
@@ -26,9 +26,9 @@
 > com.apple.syslogd.plist...............................记录系统日志的进程
 > com.apple.mobile.profile_janitor.plist..........未知作用的进程,删除无影响
 > com.apple.iqagent.plist...............................未知作用的进程,删除无影响
-> com.apple.stackshot.server.plist.................未知作用的进程,删除无影响com.apple.tcpdump.server.plist..................可能是用来转存网络数据的,具体功能未知,删除无影响
+> com.apple.stackshot.server.plist.................未知作用的进程,删除无影响com.apple.tcpdump.server.plist..................可能是用来转存网络数据的,具体功能未知,删除无影响</font>
 
-* 删除后禁用部分功能的启动项:
+<font color=orange>* 删除后禁用部分功能的启动项:
 > com.apple.searchd.plist...............................启用Sportlight(桌面最左面那个搜索器)搜索功能的进程
 > com.apple.accessoryd.plist..........................启用配件支持的进程(使用底座、音响的用户删完后会杯具)
 > com.apple.apsd.plist....................................启用Push邮件通知功能(在天朝比较很少用)
@@ -41,12 +41,12 @@
 > com.apple.AdminLite.plist............................自动关闭崩溃软件的进程
 > com.apple.mobile.obliteration.plist...............删除用户数据的进程(删除后禁用恢复出厂设置、密码错误删除、远程抹掉用户信息功能)
 > com.apple.scrod.plist...................................启用语音控制的进程
-> com.apple.itunesstored.plist........................这个进程不能完全禁用,否则你就不能使用AppStore来安装程序据说
+> com.apple.itunesstored.plist........................这个进程不能完全禁用,否则你就不能使用AppStore来安装程序据说</font>
 
-* 绝不能删除的关键开机启动项:
+<font color=red>* 绝不能删除的关键开机启动项:
 > com.apple.fairplayd.plist..............................启动数字权限管理的进程(删了就完了)
 > com.apple.installd.plist.................................启动容许安装软件的进程
-> com.apple.BTServer.plist.............................未知进程(删了后,速度会变成[真·超他妈慢])
+> com.apple.BTServer.plist.............................未知进程(删了后,速度会变成[超慢])
 > com.apple.configd+pm.plist..........................系统设置
 > com.apple.configd-pm.plist...........................系统设置
 > com.apple.gmmd.plist...................................调试进程
@@ -59,7 +59,7 @@
 > com.apple.SpringBoard.plist........................启动springboard的进程
 > com.apple.mobile.Lockdown.plist.................启动SIM网络的进程(不管有没有SIM卡,都不要删)
 > com.apple.itdbprep.plist...............................同步音乐的进程
-> com.apple.locationd.plist.............................启用定位的进程
+> com.apple.locationd.plist.............................启用定位的进程</font>
 
 
 
@@ -109,7 +109,7 @@
 > 
 > com.apple.awdd.plist -日志相关，果断删除
 > 
-> *！com.apple.backboardd.plist - 核心进程，springboard 必备
+> <font color=red>com.apple.backboardd.plist - 核心进程，springboard 必备</font>
 > 
 > com.apple.backupd.plist -和iTunes备份相关，我是从不用，所以删了
 > 
@@ -139,7 +139,7 @@
 > 
 > com.apple.cfnetwork.cfnetworkagent.plist -同上
 > 
-> ！*com.apple.cfprefsd.xpc.daemon.plist -IOS8新功能，删除后要重新激活，亲测，切不可删除！
+> <font color=red>com.apple.cfprefsd.xpc.daemon.plist -IOS8新功能，删除后要重新激活，亲测，切不可删除！</font>
 > 
 > com.apple.cloudd.plist -云服务，我从不用，直接删除了
 > 
@@ -147,7 +147,7 @@
 > 
 > com.apple.cmfsyncagent.plist -未知，我删除了无影响
 > 
-> *！com.apple.CommCenter.plist -以下为通信功能，切不可删除
+> <font color=red>com.apple.CommCenter.plist -以下为通信功能，切不可删除</font>
 > 
 > com.apple.CommCenterClassic.plist
 > 
@@ -157,7 +157,7 @@
 > 
 > com.apple.CommCenterRootHelper.plist -删除后可以打电话，但是无法用手机卡上网
 > 
-> *！com.apple.configd.plist -核心进程，删除后白苹果，连SSH都无法使用
+> <font color=red>com.apple.configd.plist -核心进程，删除后白苹果，连SSH都无法使用</font>
 > 
 > com.apple.containermanagerd.plist -容积管理，删除后无法安装软件，亲测，切不可删除！
 > 
@@ -182,9 +182,9 @@
 > 
 > com.apple.crash_mover.plist
 > 
-> *！com.apple.cvmsCompAgent_armv7.plist -CPU相关，不可删除
+> <font color=red>com.apple.cvmsCompAgent_armv7.plist -CPU相关，不可删除</font>
 > 
-> *！com.apple.cvmsServ.plist -同上
+> <font color=red>com.apple.cvmsServ.plist -同上</font>
 > 
 > com.apple.dataaccess.dataaccessd.plist -删除后不能通Exchange或Google来同步，同时在设置->邮件、通讯录、日历里添加的天气、农历等将无法使用，我从来不用，直接删除了
 > 
@@ -208,7 +208,7 @@
 > 
 > com.apple.EscrowSecurityAlert.plist -安全警报，我删除暂无影响
 > 
-> *！com.apple.fairplayd.H1.plist -删除后软件无法使用，切不可删！
+> <font color=red>com.apple.fairplayd.H1.plist -删除后软件无法使用，切不可删！</font>
 > 
 > com.apple.familycircled.plist -IOS8新功能，家庭圈子，可删
 > 
@@ -234,7 +234,7 @@
 > 
 > com.apple.homed.plist -IOS8新功能，未知，我删除暂无影响
 > 
-> *！com.apple.hpfd.mobile.plist -电话功能，不可删
+> <font color=red>com.apple.hpfd.mobile.plist -电话功能，不可删</font>
 > 
 > com.apple.iad.limitadtrackingd.plist -未知，删除无影响
 > 
@@ -270,15 +270,15 @@
 > 
 > com.apple.itunesstored.plist -删除后不可用手机APP商店
 > 
-> *！com.apple.jetsamproperties.N94.plist -管理进程的内存占用分配与优先等级的进程
+> <font color=red>com.apple.jetsamproperties.N94.plist -管理进程的内存占用分配与优先等级的进程</font>
 > 
 > com.apple.languageassetd.plist -可能和siri语音相关
 > 
 > com.apple.librariand.plist -据说和天气有关，但是我删除了一切正常
 > 
-> *！com.apple.locationd.plist -定位服务
+> <font color=red>com.apple.locationd.plist -定位服务</font>
 > 
-> *！com.apple.lsd.plist -缓存用的，删除后非常卡
+> <font color=red>com.apple.lsd.plist -缓存用的，删除后非常卡</font>
 > 
 > com.apple.lskdd.plist -未知，我删除暂无影响
 > 
@@ -286,7 +286,7 @@
 > 
 > com.apple.managedconfiguration.mdmd.plist -移动设备管理，我删除暂无影响
 > 
-> *！com.apple.managedconfiguration.profiled.plist -不可删除，系统设置功能将不可用
+> <font color=red>com.apple.managedconfiguration.profiled.plist -不可删除，系统设置功能将不可用</font>
 > 
 > com.apple.managedconfiguration.teslad.plist -和特斯拉匹配？屌丝可以删除
 > 
@@ -302,11 +302,11 @@
 > 
 > com.apple.mediaartworkd.plist -未知，我删除暂无影响
 > 
-> *！com.apple.medialibraryd.plist -删除后点击“关于本机”会闪退，有时还进不了桌面
+> <font color=red>com.apple.medialibraryd.plist -删除后点击“关于本机”会闪退，有时还进不了桌面</font>
 > 
 > com.apple.mediaremoted.plist -未知，我删除暂无影响
 > 
-> *！com.apple.mediaserverd.plist -切不可删，删除后进不了桌面，也连不上电脑
+> <font color=red>com.apple.mediaserverd.plist -切不可删，删除后进不了桌面，也连不上电脑</font>
 > 
 > com.apple.mediastream.mstreamd.plist -媒体流，我删除暂无影响
 > 
@@ -330,15 +330,15 @@
 > 
 > com.apple.mobile.insecure_notification_proxy.plist -不安全的通知**？？我删除暂无影响
 > 
-> *！com.apple.mobile.installd.plist -删除后无法安装越狱程序
+> <font color=red>com.apple.mobile.installd.plist -删除后无法安装越狱程序</font>
 > 
-> *！com.apple.mobile.keybagd.plist -核心进程，删除后白苹果，连SSH都无法使用
+> <font color=red>com.apple.mobile.keybagd.plist -核心进程，删除后白苹果，连SSH都无法使用</font>
 > 
-> *！com.apple.mobile.lockbot.plist -核心进程，删除后白苹果，连SSH都无法使用
+> <font color=red>com.apple.mobile.lockbot.plist -核心进程，删除后白苹果，连SSH都无法使用</font>
 > 
-> *！com.apple.mobile.lockdown.plist -核心进程，删除后白苹果，连SSH都无法使用
+> <font color=red>com.apple.mobile.lockdown.plist -核心进程，删除后白苹果，连SSH都无法使用</font>
 > 
-> *！com.apple.mobile.notification_proxy.plist -通知功能
+> <font color=red>com.apple.mobile.notification_proxy.plist -通知功能</font>
 > 
 > com.apple.mobile.obliteration.plist -必须删除！禁用此服务设置里的抹掉所有内容将不可用。防止手贱点到造成白苹果
 > 
@@ -346,13 +346,13 @@
 > 
 > com.apple.mobile.storage_mounter.plist -该进程是苹果在未来设备及固件中开启的新功能，将允许你使用你的iPhone保持在“磁盘模式”。也就是相当于一块移动硬盘来使用，不过，在目前的固件中暂时不执行任何操作，因此可以安全地删除这一并未投入使用，且未来也未必会投入使用的“功能”。删吧
 > 
-> *！com.apple.mobileactivationd-iphoneos.plist -删除后将无法激活手机
+> <font color=red>com.apple.mobileactivationd-iphoneos.plist -删除后将无法激活手机</font>
 > 
 > com.apple.mobileassetd.plist - “hey siri”功能
 > 
 > com.apple.mobilecheckpoint.checkpointd.plist -未知，我删除暂无影响
 > 
-> *！com.apple.MobileFileIntegrity.plist - 文件权限删除后第三方程序将无法运行 
+> <font color=red>com.apple.MobileFileIntegrity.plist - 文件权限删除后第三方程序将无法运行 </font>
 > 
 > com.apple.mobilegestalt.xpc.plist -关于本机名称的功能，删除后不显示本机名
 > 
@@ -360,9 +360,9 @@
 > 
 > com.apple.mobilestoredemod.plist -未知，我删除暂无影响
 > 
-> *！com.apple.mobile_installation_proxy.plist -第三方软件安装相关启动项
+> <font color=red>com.apple.mobile_installation_proxy.plist -第三方软件安装相关启动项</font>
 > 
-> *！com.apple.mtmergeprops.plist -核心进程，触屏操作
+> <font color=red>com.apple.mtmergeprops.plist -核心进程，触屏操作</font>
 > 
 > com.apple.nand_task_scheduler.plist -未知，我删除了暂无影响
 > 
@@ -380,7 +380,7 @@
 > 
 > com.apple.nfsconf.plist -网络文件系统的配置文件进程启动项
 > 
-> *！com.apple.notifyd.plist -核心进程，通知相关，springboard 必备
+> <font color=red>com.apple.notifyd.plist -核心进程，通知相关，springboard 必备</font>
 > 
 > com.apple.nsurlsessiond.plist -亲测，删除后不能在APP里面下载软件
 > 
@@ -396,7 +396,7 @@
 > 
 > com.apple.pfd.plist -未知，我删除了暂无影响
 > 
-> *！com.apple.pipelined.plist -删除后各种耗电，不稳定
+> <font color=red>com.apple.pipelined.plist -删除后各种耗电，不稳定</font>
 > 
 > com.apple.pluginkit.pkd.plist -IOS8新功能，就是通知中心里面的编辑功能，还有和第三方输入法有关
 > 
@@ -444,7 +444,7 @@
 > 
 > com.apple.safarifetcherd.plist 浏览器的什么，删除暂无影响
 > 
-> *！com.apple.sandboxd.plist -核心进程，删除后白苹果，连SSH都无法使用
+> <font color=red>com.apple.sandboxd.plist -核心进程，删除后白苹果，连SSH都无法使用</font>
 > 
 > com.apple.sbd.plist 未知，但我删除无影响
 > 
@@ -462,7 +462,7 @@
 > 
 > com.apple.security.swcagent.plist
 > 
-> *！com.apple.securityd.plist -删除立马白苹果
+> <font color=red>com.apple.securityd.plist -删除立马白苹果</font>
 > 
 > com.apple.softwarebehaviorservicesd.plist 以下为OTA升级服务
 > 
@@ -470,7 +470,7 @@
 > 
 > com.apple.splashboardd.plist -未知，删除没任何影响
 > 
-> *！com.apple.SpringBoard.plist 核心进程，springboard 必备
+> <font color=red>com.apple.SpringBoard.plist 核心进程，springboard 必备</font>
 > 
 > com.apple.storebookkeeperd.plist 书店进程守护启动项
 > 
@@ -486,7 +486,7 @@
 > 
 > com.apple.syslog_relay.plist
 > 
-> *！com.apple.tccd.plist 核心进程，springboard 必备
+> <font color=red>com.apple.tccd.plist 核心进程，springboard 必备</font>
 > 
 > com.apple.telephonyutilities.callservicesd.plist 貌似电话服务，不建议删除
 > 
@@ -508,13 +508,13 @@
 > 
 > com.apple.usb.networking.addNetworkInterface.plist 可能是把iPhone当无线网卡的功能
 > 
-> *！com.apple.usbptpd.plist -核心进程，删除后白苹果，连SSH都无法使用
+> <font color=red>com.apple.usbptpd.plist -核心进程，删除后白苹果，连SSH都无法使用</font>
 > 
-> *！com.apple.UserEventAgent-System.plist  如果删除，会有出现高温警告，无法进系统
+> <font color=red>com.apple.UserEventAgent-System.plist  如果删除，会有出现高温警告，无法进系统</font>
 > 
 > com.apple.voiced.plist - 语音相关，不用可以删
 > 
-> *！com.apple.voicemail.vmd.plist -切不可删，删除后进不了桌面，但是可以连电脑
+> <font color=red>com.apple.voicemail.vmd.plist -切不可删，删除后进不了桌面，但是可以连电脑</font>
 > 
 > com.apple.voicememod.plist 语音相关，不用可以删
 > 
@@ -535,5 +535,4 @@
 > com.apple.wifiFirmwareLoader.plist
 > 
 > com.apple.wirelessproxd.plist
-> 
 
