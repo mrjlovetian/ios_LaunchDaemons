@@ -9,9 +9,6 @@
 | /Library/LaunchAgents | 存放第三方程序的代理程序plist文件，通常为空 |
 | ~/Library/LaunchAgents | 用户自有的launch代理程序，只有对应的用户才会执行。 | | 用户自有的launch代理程序，只有对应的用户才会执行。 |
     
-    
-    
-    
 
 # 文件含义
 * <font color=green>删除后没有影响的开机启动项:
@@ -62,7 +59,7 @@
 > com.apple.locationd.plist.............................启用定位的进程</font>
 
 
-
+# 全部描述，部分省略
 > com.apple.ABDatabaseDoctor.plist -通讯录数据库诊断，删除无影响，还可以防止苹果窃取用户通讯录
 > 
 > com.apple.absd.plist -siri相关
