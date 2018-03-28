@@ -1,13 +1,17 @@
 # ios_LaunchDaemons
 文件在手机中的目录：/System/Library/LaunchDaemon
 
-	| 目录 | 用途 |
-    | --- | --- |
-    | /System/Library/LaunchDaemons | 存放属于系统本身的守护程序plist文件 |
-    | /Library/LaunchDaemons | 存放第三方程序的守护程序plist文件 |
-    | /System/Library/LaunchAgents<span class="Apple-tab-span" style="white-space:pre"></span> | 存放属于系统本身的代理程序plist文件 |
-    | /Library/LaunchAgents | 存放第三方程序的代理程序plist文件，通常为空 |
-    | ~/Library/LaunchAgents | 用户自有的launch代理程序，只有对应的用户才会执行。 |
+| 目录 | 用途 |
+| --- | --- |
+| /System/Library/LaunchDaemons | 存放属于系统本身的守护程序plist文件 |
+| /Library/LaunchDaemons | 存放第三方程序的守护程序plist文件 |
+| /System/Library/LaunchAgents | 存放属于系统本身的代理程序plist文件 |
+| /Library/LaunchAgents | 存放第三方程序的代理程序plist文件，通常为空 |
+| ~/Library/LaunchAgents | 用户自有的launch代理程序，只有对应的用户才会执行。 | | 用户自有的launch代理程序，只有对应的用户才会执行。 |
+    
+    
+    
+    
 
 # 文件含义
 * 删除后没有影响的开机启动项:
